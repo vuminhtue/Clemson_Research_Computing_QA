@@ -49,10 +49,10 @@ singularity exec --nv -p ros_noetic-desktop-full.sif bash -c 'source /opt/ros/no
 singularity exec --nv -p ros_kinetic-desktop-full.sif bash -c 'source /opt/ros/kinetic/setup.bash; rviz'
 singularity exec --nv -p ros_kinetic-desktop-full.sif bash -c 'source /opt/ros/kinetic/setup.bash; gazebo'
 ```
+Note: The **-p** is to make sure all child processes in the container are terminated when the container terminates.
 
 ![image](https://user-images.githubusercontent.com/43855029/123155946-b54d5a00-d436-11eb-8354-041e83699f71.png)
 
-Note: The **-p** is to make sure all child processes in the container are terminated when the container terminates.
 
 The corresponding RVIZ window appears:
 ![image](https://user-images.githubusercontent.com/43855029/123156005-c72efd00-d436-11eb-9c93-3fd0f454e3f4.png)
