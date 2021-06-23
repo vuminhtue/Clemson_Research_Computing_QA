@@ -31,3 +31,8 @@ Inside Episode, create mark down file.
 
 ![image](https://user-images.githubusercontent.com/43855029/123160732-8508ba00-d43c-11eb-84d0-9376e71fa797.png)
 
+- Insert Description
+- Paste the link to the address bar and Save changes.
+
+![image](https://user-images.githubusercontent.com/43855029/123160846-a8cc0000-d43c-11eb-82d6-ad2f1387bccc.png)
+
