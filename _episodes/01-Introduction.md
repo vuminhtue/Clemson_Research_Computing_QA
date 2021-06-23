@@ -1,24 +1,23 @@
 ---
-title: "Introduction to R"
+title: "Use of ROS container"
 teaching: 5 min
 exercises: 0
-questions: "What is R?"
+questions: "How to run ROS container in Palmetto HPC"
 objectives:
-- "Basic Introductory of R"
-- "Why using R"
+- "Download ros docker file"
+- "Open Rviz and Gazebo GUI in container"
 keypoints:
-- "Advantage of using R"
+- "ROS, container"
 ---
-- R is a language and environment for statistical computing and graphics.
-- R is similar to the S language 
-- R is developed at Bell Laboratories (formerly AT&T, now Lucent Technologies) by John Chambers and colleagues.
-- R can be considered as a different implementation of S language
-- R provides a wide variety of statistical (linear and nonlinear modelling, classical statistical tests, time-series analysis, classification, clustering, …) and graphical techniques, and is highly extensible. 
-- R is available as Free Software 
-- R runs on a wide variety of UNIX platforms and similar systems (including FreeBSD and Linux), Windows and MacOS.
-- R can be extended (easily) via packages on CRAN (The Comprehensive R Archive Network)
-- R is within top of Data Science language and has many statistical packages available on CRAN
 
-![image](https://user-images.githubusercontent.com/43855029/114046192-a3f0aa80-9856-11eb-9646-995a67c144f9.png)
+## Download ROS from dockerhub:
+Website: https://hub.docker.com/_/ros
 
+![image](https://user-images.githubusercontent.com/43855029/123154694-37d51a00-d435-11eb-833f-d13f4abae7f2.png)
+Let's download noetic and kinetic ROS version:
 
+Request for a compute node with tesla v100 gpu and pull the docker images
+```bash
+$ singularity pull docker://osrf/ros:noetic-desktop-full
+$ singularity pull docker://osrf/ros:kinetic-desktop-full
+```
