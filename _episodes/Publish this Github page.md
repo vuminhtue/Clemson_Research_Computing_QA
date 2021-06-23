@@ -25,3 +25,9 @@ Inside Episode, create mark down file.
 - Copy the highlighted link:
 
 ![image](https://user-images.githubusercontent.com/43855029/123160560-568adf00-d43c-11eb-8217-dba0fc78e0eb.png)
+
+## Back to Repository
+- Click on Setting icon next to About:
+
+![image](https://user-images.githubusercontent.com/43855029/123160732-8508ba00-d43c-11eb-84d0-9376e71fa797.png)
+
