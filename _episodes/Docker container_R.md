@@ -19,7 +19,7 @@ mkdir ~/rstudio
 cd rstudio
 mkdir var
 singularity build rstudio.img docker://rocker/rstudio
-SINGULARITYENV_PASSWORD=abc123 SINGULARITYENV_S6_READ_ONLY_ROOT=1 singularity run -B /home/tuev/workspace/rstudio/var:/var rstudio.img
+SINGULARITYENV_PASSWORD=abc123 SINGULARITYENV_S6_READ_ONLY_ROOT=1 singularity run -B ~/rstudio/var:/var rstudio.img
 ```
 
 Use Socket Proxy forward to access the rstudio server at PALMETTO_NODE:8787
