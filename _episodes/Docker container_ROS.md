@@ -9,6 +9,14 @@ objectives:
 keypoints:
 - "ROS, container"
 ---
+## What is ROS?
+The Robot Operating System (ROS) is a set of software libraries and tools that help you build robot applications. From drivers to state-of-the-art algorithms, and with powerful developer tools, ROS has what you need for your next robotics project. And it's all open source.
+
+## What is rviz?
+rviz (short for “ROS visualization”) is a 3D visualization software tool for robots, sensors, and algorithms. It enables you to see the robot’s perception of its world (real or simulated).
+
+## What is Gazebo?
+Gazebo is a 3D robot simulator. Its objective is to simulate a robot, giving you a close substitute to how your robot would behave in a real-world physical environment. It can compute the impact of forces (such as gravity).
 
 ## Download ROS from dockerhub:
 Website: https://hub.docker.com/_/ros
