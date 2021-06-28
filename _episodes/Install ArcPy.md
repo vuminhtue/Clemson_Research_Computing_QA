@@ -98,10 +98,10 @@ Test to make sure it works
 $ source activate arcpy_env
 $ conda install -y -c conda-forge kernda
 $ python -m ipykernel install --user --name arcpy_env --display-name "MyArcPy"
-$ kernda /home/$USER/.local/share/jupyter/kernels/arcpy_env/kernel.json -o
+$ kernda /home/tuev/.local/share/jupyter/kernels/arcpy_env/kernel.json -o
 ```
 
-Modify /home/$USER/.local/share/jupyter/kernels/arcpy_env/kernel.json and make sure the following lines are added:
+Modify /home/tuev/.local/share/jupyter/kernels/arcpy_env/kernel.json and make sure the following lines are added:
 
 ```bash
 {
@@ -110,7 +110,7 @@ Modify /home/$USER/.local/share/jupyter/kernels/arcpy_env/kernel.json and make s
     "-c",
     "source \"/software/spackages/linux-centos8-x86_64/gcc-8.3.1/anaconda3-5.1.0-c3p5et4cpo7jaiahacqa3pqwhop7tiik/bin/activate\" \"/home/tuev/.conda/envs/arcpy1\" && exec /home/tuev/.conda/envs/arcpy1/bin/python -m ipykernel_launcher -f '{connection_file}' "
   ],
-  "env": {"ARCGISHOME":"/home/$USER/arcgis/server"},
+  "env": {"ARCGISHOME":"/home/tuev/arcgis/server"},
   "display_name": "MyArcPy510",
   "language": "python"
 }
