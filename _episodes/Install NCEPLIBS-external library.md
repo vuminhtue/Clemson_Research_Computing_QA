@@ -16,7 +16,11 @@ Request for a compute node
 
 ```bash
 $ qsub -I -l select=1:ncpus=16::mpiprocs=16:mem=32gb:interconnect=any,walltime=24:00:00
+```
+
 Clone particular version 1.1.0 or 1.0.0:
+
+```bash
 $ git clone -b ufs-v1.1.0 --recursive https://github.com/NOAA-EMC/NCEPLIBS-external
 $ cd NCEPLIBS-external/
 $ mkdir build
