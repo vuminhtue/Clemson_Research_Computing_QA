@@ -2,8 +2,9 @@ Wien2k is the software site license!!!
 
 Since everyone with the source code is able to install the software, so it's best to install it to private zfs. Users will be added to zfs upon request in order to access the source code and installed directory. 
 
+## Procedure:
 
-## Request a 1g node with more cpus/mem
+- Request a 1g node with more cpus/mem
 - Create the installation directory: /zfs/trangroup/WIEN2k
 - Extract the source code to new directory: $ tar -xf WIEN2k_19.1.tar -C WIEN2k
 - Load the necessary modules: 
@@ -14,6 +15,11 @@ $ cd WIEN2k
 $ gunzip *.gz
 $  ./expand_lapw #select yes to overwrite
 $ ./siteconfig_lapw # select c and Enter to continue
+```
+
+Note:
+
+```
 Select LG # LG Linux (gfortran + gcc (version 6 or higher) + OpenBlas)
 Your compiler: gfortran
 Your compiler: gcc
