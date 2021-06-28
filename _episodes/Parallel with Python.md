@@ -41,10 +41,11 @@ print("Number of processors: ", mp.cpu_count())
 %%time
 for i in range(2,500):
     max_eig(i)
-```
 
 CPU times: user 1min 11s, sys: 55.4 s, total: 2min 6s
 Wall time: 31.7 s
+```
+
 
 
 ## Using `multiprocessing` with 2 cpus for the loop
@@ -53,6 +54,7 @@ Wall time: 31.7 s
 %%time
 with Pool(2) as p:
     p.map(max_eig, range(2,500))
-```
+
 CPU times: user 6.12 ms, sys: 19.1 ms, total: 25.3 ms
 Wall time: 19.2 s
+```
