@@ -41,7 +41,7 @@ make install
 $ module load anaconda3/2019.10-gcc/8.3.1 cmake/3.17.3-gcc/8.3.1 openmpi/3.1.5-gcc/7.1.0-ucx gcc/7.1.0 parallel-netcdf/1.12.1-gcc/8.3.1-cuda10_2
 ```
 
-4. configure and compile: 
+3. configure and compile: 
 
 ```bash
 $ ./configure -mpi gnu
