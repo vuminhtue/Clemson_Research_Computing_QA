@@ -1,0 +1,15 @@
+Similar to Parallel with Job Array, here we use gnu-parallel.
+
+The following batch script is used with 8 cores:
+
+```bash
+#PBS -N gnu-parallel-example
+#PBS -l select=1:ncpus=8:mem=1gb,walltime=00:05:00
+#PBS -j oe
+
+module add gnu-parallel
+
+cd $PBS_O_WORKDIR
+
+seq 1 8 | parallel -j8 'mkdir GNU_{}; cd GNU_{}; touch file_{}'
+```
