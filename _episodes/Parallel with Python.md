@@ -16,6 +16,7 @@ keypoints:
 Example: 
 
 Using some intensive computing function:
+
 This function generates a square matrix of uniformly distributed random numbers, finds the corresponding (complex) eigenvalues and then selects the eigenvalue with the largest modulus. The dimensions of the matrix and the standard deviation of the random numbers are given as input parameters.
 
 ```python
