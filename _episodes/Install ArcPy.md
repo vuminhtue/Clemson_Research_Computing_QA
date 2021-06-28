@@ -105,7 +105,6 @@ Modify /home/$USER/.local/share/jupyter/kernels/arcpy_env/kernel.json and make s
 
 ```bash
 {
-
   "argv": [
     "bash",
     "-c",
