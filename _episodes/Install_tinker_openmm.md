@@ -23,7 +23,8 @@ $ cd ../ && mkdir build
 $ cp ../source/**.f .
 $ cp ../openmm/* .
 
-7. Edit Makefile with following information: (these are applied to me with tinker home and openmm home)
+7. Edit Makefile with following information: (these are applied to me with tinker home and openmm home):
+
 TINKERDIR = /home/tuev/source/tinker/tinker
 TINKER_LIBDIR = $(TINKERDIR)/lib
 BINDIR = $(TINKERDIR)/bin
