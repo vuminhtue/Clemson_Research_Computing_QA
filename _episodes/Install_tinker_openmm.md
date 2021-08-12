@@ -42,10 +42,6 @@ CUDA_DIR = /software/spackages/linux-centos8-x86_64/gcc-8.3.1/cuda-11.0.2-g47zt3
 CUDA_INCLUDE = $(CUDA_DIR)/include
 CUDA_LIB = $(CUDA_DIR)/lib
 
-# Uncomment below for 64-bit Linux
-CUDA_LIB = $(CUDA_DIR)/lib64
-NVML_INCLUDE = /usr/include/nvidia/gdk
-NVML_LIB = /usr/local/cuda/lib64/stubs
 
 8. Run the "make" command to build executables. When the build is finished, there will be three executables produced in the build directory:
 "analyze_omm.x", "bar_omm.x" and "dynamic_omm.x".
