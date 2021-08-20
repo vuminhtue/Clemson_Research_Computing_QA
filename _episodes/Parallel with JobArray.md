@@ -1,3 +1,15 @@
+---
+title: "How to run parallel with job array"
+teaching: 5 min
+exercises: 0
+questions: "How to run parallel with job array in Palmetto"
+objectives:
+
+keypoints:
+- "parallel, job array"
+---
+
+
 ## Here is a sample of running job array in batch script:
 
 The following example create 8 different directories then go into each directory, creating a new txt file:
