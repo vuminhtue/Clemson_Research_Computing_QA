@@ -1,5 +1,5 @@
 ---
-title: "parallel with job array"
+title: "Parallel with job array"
 teaching: 5 min
 exercises: 0
 questions: "How to run parallel with job array in Palmetto"
