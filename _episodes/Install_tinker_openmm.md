@@ -1,3 +1,15 @@
+---
+title: "How to install Tinker-OpenMM"
+teaching: 5 min
+exercises: 0
+questions: "How to install Tinker-OpenMM to Palmetto"
+objectives:
+
+keypoints:
+- "Tinker, OpenMM"
+---
+
+
 https://github.com/TinkerTools/tinker-openmm
 
 At time of writing this doc, we need to build Tinker-OpenMM against an OpenMM release from immediately prior to 4 March 2021. Therefore, I build openmm version 7.5.0 using conda environment:
