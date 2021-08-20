@@ -1,5 +1,5 @@
 ---
-title: "Use of ROS container"
+title: "Docker container ROS"
 teaching: 5 min
 exercises: 0
 questions: "How to run ROS container in Palmetto HPC"
