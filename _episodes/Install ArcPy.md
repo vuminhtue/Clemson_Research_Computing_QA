@@ -1,5 +1,5 @@
 ---
-title: "How to install ArcPy to Palmetto JHub"
+title: "Install ArcPy to Palmetto JHub"
 teaching: 5 min
 exercises: 0
 questions: "How to install Arcpy to Palmetto"
