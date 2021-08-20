@@ -1,5 +1,5 @@
 ---
-title: "How to install RAPIDS with GPU support"
+title: "Install RAPIDS with GPU support"
 teaching: 5 min
 exercises: 0
 questions: "How to install Rapids with GPU support to Palmetto"
