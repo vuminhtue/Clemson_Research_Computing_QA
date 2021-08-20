@@ -1,5 +1,5 @@
 ---
-title: "Use of R container"
+title: "Docker container R"
 teaching: 5 min
 exercises: 0
 questions: "How to run R container in Palmetto HPC"
