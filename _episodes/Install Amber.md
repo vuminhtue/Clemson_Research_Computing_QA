@@ -1,5 +1,5 @@
 ---
-title: "How to install Amber with GPU support"
+title: "Install Amber with GPU support"
 teaching: 5 min
 exercises: 0
 questions: "How to install Amber with GPU support to Palmetto"
