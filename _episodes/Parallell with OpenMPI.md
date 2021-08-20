@@ -1,5 +1,5 @@
 ---
-title: "How to run parallel with openmpi"
+title: "Parallel with openmpi"
 teaching: 5 min
 exercises: 0
 questions: "How to run parallel with openmpi in Palmetto"
