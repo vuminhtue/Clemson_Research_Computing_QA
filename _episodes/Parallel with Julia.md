@@ -1,3 +1,13 @@
+---
+title: "parallel with Julia"
+teaching: 5 min
+exercises: 0
+questions: "How to run parallel with Julia in Palmetto"
+objectives:
+
+keypoints:
+- "parallel, julia"
+---
 
 
 
