@@ -2,7 +2,7 @@
 title: "How to install Tinker-OpenMM"
 teaching: 5 min
 exercises: 0
-questions: "How to install Tinker-OpenMM to Palmetto"
+questions: "Install Tinker-OpenMM to Palmetto"
 objectives:
 
 keypoints:
