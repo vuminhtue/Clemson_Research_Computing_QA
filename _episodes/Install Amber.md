@@ -1,3 +1,15 @@
+---
+title: "How to install Amber with GPU support"
+teaching: 5 min
+exercises: 0
+questions: "How to install Amber with GPU support to Palmetto"
+objectives:
+
+keypoints:
+- "amber, gpu"
+---
+
+
 ## AMBER_GPU
 
 1. Request a GPU node
