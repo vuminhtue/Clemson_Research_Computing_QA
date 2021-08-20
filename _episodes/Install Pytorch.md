@@ -1,5 +1,5 @@
 ---
-title: "How to install Pytorch with GPU support"
+title: "Install Pytorch with GPU support"
 teaching: 5 min
 exercises: 0
 questions: "How to install Pytorch with GPU support to Palmetto"
