@@ -1,3 +1,15 @@
+---
+title: "How to install ArcPy to Palmetto JHub"
+teaching: 5 min
+exercises: 0
+questions: "How to install Arcpy to Palmetto"
+objectives:
+
+keypoints:
+- "ArcPy"
+---
+
+
 In order to install arcpy, one need to install ArcGIS Server. User need to be added to ESRI account in order to be authorized to run arcpy.
 
 Following are the steps to install arcpy with python 3.6 using conda environment.
