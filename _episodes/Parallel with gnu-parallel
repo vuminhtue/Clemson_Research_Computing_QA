@@ -1,3 +1,14 @@
+---
+title: "How to run parallel with gnu-parallel"
+teaching: 5 min
+exercises: 0
+questions: "How to run parallel with gnu-parallel in Palmetto"
+objectives:
+
+keypoints:
+- "parallel, job array"
+---
+
 Similar to Parallel with Job Array, here we use gnu-parallel.
 
 The following batch script is used with 8 cores:
