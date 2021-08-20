@@ -1,3 +1,15 @@
+---
+title: "How to install WIEN2k"
+teaching: 5 min
+exercises: 0
+questions: "How to install WIEN2k to Palmetto"
+objectives:
+
+keypoints:
+- "Wien2k"
+---
+
+
 Wien2k is the software site license!!!
 
 Since everyone with the source code is able to install the software, so it's best to install it to private zfs. Users will be added to zfs upon request in order to access the source code and installed directory. 
