@@ -1,3 +1,15 @@
+---
+title: "How to install Pytorch with GPU support"
+teaching: 5 min
+exercises: 0
+questions: "How to install Pytorch with GPU support to Palmetto"
+objectives:
+
+keypoints:
+- "pytorch, gpu"
+---
+
+
 ## Install PyTorch with GPU
 
 ```bash
