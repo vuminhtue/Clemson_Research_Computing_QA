@@ -1,3 +1,13 @@
+---
+title: "How to install Quantum Espresso"
+teaching: 5 min
+exercises: 0
+questions: "How to install Quantum Espresso in Palmetto"
+objectives:
+
+keypoints:
+- "Quantum Espresso"
+---
 
 There are only 3 GPU architecture supported: Kepler (sm35), Pascal (sm60) and Volta (sm70). Unfortunately, our latest Ampere (sm80) is not yet supported during the time of writing documentation for QE version 6.8.
 
