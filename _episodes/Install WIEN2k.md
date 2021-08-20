@@ -2,7 +2,7 @@
 title: "How to install WIEN2k"
 teaching: 5 min
 exercises: 0
-questions: "How to install WIEN2k to Palmetto"
+questions: "Install WIEN2k to Palmetto"
 objectives:
 
 keypoints:
