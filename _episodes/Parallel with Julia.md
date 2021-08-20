@@ -1,5 +1,5 @@
 ---
-title: "parallel with Julia"
+title: "Parallel with Julia"
 teaching: 5 min
 exercises: 0
 questions: "How to run parallel with Julia in Palmetto"
