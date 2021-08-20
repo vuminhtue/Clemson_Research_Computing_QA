@@ -2,7 +2,7 @@
 title: "How to install Tensorflow with GPU support"
 teaching: 5 min
 exercises: 0
-questions: "How to install Tensorflow with GPU support to Palmetto"
+questions: "Install Tensorflow with GPU support to Palmetto"
 objectives:
 
 keypoints:
