@@ -1,3 +1,15 @@
+---
+title: "How to run parallel with openmpi"
+teaching: 5 min
+exercises: 0
+questions: "How to run parallel with openmpi in Palmetto"
+objectives:
+
+keypoints:
+- "parallel, openmpi"
+---
+
+
 ## First download and configure gnu hello
 
 Request a compute node with 16 mpiprocs:
