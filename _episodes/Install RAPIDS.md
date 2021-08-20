@@ -1,3 +1,15 @@
+---
+title: "How to install RAPIDS with GPU support"
+teaching: 5 min
+exercises: 0
+questions: "How to install Rapids with GPU support to Palmetto"
+objectives:
+
+keypoints:
+- "Rapids, gpu"
+---
+
+
 Installing RAPIDS can be a little bit tricky. So here is what I have done so far at the time of writing this note.
 
 Request Tesla V100 node:
