@@ -1,21 +1,21 @@
 ---
-title: "Using Matplotlib Basemap"
+title: "Install python packages"
 teaching: 5 min
 exercises: 0
-questions: "Problem using matplotlib basemap in JHub"
+questions: "How to install certain tough package in python"
 objectives:
 
 keypoints:
-- "Matplotlib Basemap"
+- "Matplotlib, Basemap, gdal, osgeo"
 ---
 
-Install matplotlib
+### Install matplotlib
 
 ```python
 pip install -U matplotlib==3.2
 ```
 
-Install Basemap
+### Install Basemap
 
 ```python
 conda install -c anaconda basemap
@@ -37,4 +37,12 @@ Inside Jupyter Notebook, add in this line:
 import os
 os.environ['PROJ_LIB'] = '/home/tuev/.conda/envs/skln/share/proj'
 from mpl_toolkits.basemap import Basemap
+```
+
+### Install gdal & osgeo
+
+```python
+$ conda install -c conda-forge gdal==3.0.1
+$ python
+>> from osgeo import gdal
 ```
