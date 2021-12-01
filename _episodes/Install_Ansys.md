@@ -57,10 +57,10 @@ Note: for all Ansys version installed to software/commercial/ansys/, it will cre
 
 The silent mode will not install license to /software/commercial/ansys/. So you have to use GUI to install FLUIDS to your home or scratch system. with following information in the license detail:
 
-Ansys Licensing Interconnect Path 2325
+Ansys Licensing Interconnect Path xxxx
 
-FLEXlm License Path 28008
-server: license4.clemson.edu
+FLEXlm License Path xxxx
+server: xxxx
 
 It will install a folder name share_files outside other v195, v202 folder. Copy and replace this folder to /software/commercial/ansys to make the license works across all nodes.
 
