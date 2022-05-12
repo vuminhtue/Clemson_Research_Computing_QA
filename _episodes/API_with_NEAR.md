@@ -68,3 +68,37 @@ The start and end DateTime can be altered
 
 
 ## Python
+- Postman is free and simple to use to download data. However, it still requires manual import the shapefile and name changed for every download.
+- Python script is generated to support mass downloading.
+- To get the python script from Postman click on the link to open code snippet:
+
+![image](https://user-images.githubusercontent.com/43855029/168147268-ab5b3f1b-496b-4e7a-9dcd-30ee77a3945e.png)
+
+- In order to do the automation, we need to modify the input information, such as report name, zip file name, zip file location 
+- Here we do everything in ManeFrame M2 supercomputer, the GIS shapefiles are uploaded to home directory.
+- Following is the python code:
+
+```python
+import requests
+import os
+import json
+
+url = "https://uberretailapi.uberads.com/v1/uberretailapi/createJobWithFile"
+headers = {'Authorization': 'Bearer xxxxxxx'}    
+j=0
+n=1
+dir1 = '/home/tuev/Projects/Makris/GIS/zip/test/'
+listfile = os.listdir(dir1)
+while j<=len(listfile)-1:    
+    dict1 = dict({"pipReportType":"PIN_REPORT","reportName":f"{listfile[j]}","polygonInputOptions": { "polygonFormat": "ESRI_SHAPEFILE_ZIP","polygonNameAliasElement": "PageName" },"startDateTime": "2021-01-01 00:00:00","endDateTime": "2021-03-31 23:59:59"})
+    payload = {'jsonRequest':str(dict1).replace("'",'"')}
+    files=[('polygonFile',(f"{listfile[j]}",open(f'{dir1}{listfile[j]}','rb'),'application/zip'))]    
+    response = requests.request("POST", url, headers=headers, data=payload, files=files)            
+    if "True" in str(json.loads(response.text).values()):
+        print("Succeeded. Submitting job to download ",listfile[j])
+        j+=1
+        n=1
+    else:
+        print("Failure. Resubmitting job ", listfile[j], " ", n,  " times")
+        n+=1
+```
