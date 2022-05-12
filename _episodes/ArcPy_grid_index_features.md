@@ -33,13 +33,66 @@ keypoints:
 - The 300 grids are generated:
 
 ![image](https://user-images.githubusercontent.com/43855029/168159310-4f7d3c45-402e-4d55-92c1-a323216008a0.png)
+- Save the file into shapefile: DFW77.shp
 
-## Step 3: Apply the same Grid Index Feature to split 300 grids to 0.16mi2 grid
+  ## Step 3: Save 300 49mi2 grids to shapefiles
+- We can use python geopandas to save DFW77 to 300 shapefiles:
+
+```python
+import geopandas as gpd
+dir = "/home/tuev/Projects/Makris/GIS/"
+shape = gpd.read_file(dir+"DFW77.shp)
+for i in shape.PageName:
+  shapeout = shape(shape.PageName==i)
+  shapeout.ti_file(dir+i+".shp")
+```
+
+- Total 1500 files are created for 300 shapefiles (each shapefile consists of 5 other files)
+
+## Step 4: Apply the same Grid Index Feature to split 300 grids to 0.16mi2 grid
 - We cannot use Grid Index Features for 300 grids, therefore, we will use ArcPy which is ArcGIS library in python
 - ArcPy is only available in ArcGIS Pro but not in HPC or Macs yet.
 - To use ArcPy, click on Analyses\Python\Python Notebook
 - The new notebook appears and we can type in the following code:
 
 ```python
+# Import modules
+import arcpy, os
+from arcpy import env
+import numpy as np
+from zipfile import ZipFile
 
+# Set environment settings to folders:
+dir="C:/SMU/PROJECTS/Makris_cellphone/GIS/DFW_Nicos/Final_Code/GIS"
+arcpy.env.workspace = dir
+
+# Create the list of name of unique shapefile:
+List1 = os.listdir(dir)
+List2 = list()
+for i in List1:
+    pathname,extension = ps.path.splittext(dir+i)
+    filename = pathname.split('/')
+    List2.append(filename[-1])
+
+FinalList = np.unique(List2)
+
+# Create the output folder output0404 and use ArcPy to generate the files
+
+for i in FinalList
+    print(i)
+    #Set local variables
+    outFeatureClass = output_folder+i
+    inFeatures = i
+    
+    polygonWidth = "0.4 miles"
+    polygonHeight = "0.4 miles"
+    
+    # Execute GridIndexFeatures:
+    arcpy.GridIndexFeatures_cartography(outFeatureClass,inFeatures,"","","",
+                                        polygonWidth,polygonHeight)
 ```
+
+The following grids are created:
+
+![image](https://user-images.githubusercontent.com/43855029/168162717-824069ce-2834-407b-8f64-94e3dd4abc4f.png)
+
