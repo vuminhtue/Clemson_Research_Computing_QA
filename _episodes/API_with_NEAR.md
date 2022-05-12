@@ -102,3 +102,5 @@ while j<=len(listfile)-1:
         print("Failure. Resubmitting job ", listfile[j], " ", n,  " times")
         n+=1
 ```
+
+- Note that due to the near server, sometime not being able to import GIS file, so we need to resubmit if it failed. It is represented as the for while loop.
