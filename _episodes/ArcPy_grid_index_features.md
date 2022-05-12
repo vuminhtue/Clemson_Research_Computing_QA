@@ -1,5 +1,5 @@
 ---
-title: "Dividing grid into smaller boxes"
+title: "Using ArcPy to partition grid into smaller boxes"
 teaching: 5 min
 exercises: 0
 questions: "Using ArcPy to divide the shapefile into smaller boxes"
