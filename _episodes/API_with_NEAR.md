@@ -45,8 +45,8 @@ keypoints:
 
 - The most important task is the Body section, in the form data, there are 2 files that you need to insert:
 
-- polygonFile with file type is File.
-- jsonRequest with the string to download. Detail of json file is below:
+    + polygonFile with file type is File.
+    + jsonRequest with the string to download. Detail of json file is below:
 
 ```json
 {"pipReportType":"PIN_REPORT",
@@ -57,6 +57,9 @@ keypoints:
 "endDateTime": "2021-03-31 23:59:59"
 }
 ```
+
+![image](https://user-images.githubusercontent.com/43855029/168343025-30961336-e99a-4d72-94d0-3e5ee1c69319.png)
+
 
 Note that: the reportName can be changed to match with the input shapefile.
 The polygonNameAliasElement="PageName" is fixed with the shapefile variable names
