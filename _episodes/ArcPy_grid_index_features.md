@@ -42,10 +42,10 @@ keypoints:
 ```python
 import geopandas as gpd
 dir = "/home/tuev/Projects/Makris/GIS/"
-shape = gpd.read_file(dir+"DFW77.shp)
+shape = gpd.read_file(dir+"DFW77.shp")
 for i in shape.PageName:
-  shapeout = shape(shape.PageName==i)
-  shapeout.ti_file(dir+i+".shp")
+    shapeout = shape[shape.PageName==i]
+    shapeout.to_file(dir+i+".shp")
 ```
 
 - Total 1500 files are created for 300 shapefiles (each shapefile consists of 5 other files)
