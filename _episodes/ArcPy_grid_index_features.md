@@ -101,17 +101,18 @@ The following grids are created:
 
 ![image](https://user-images.githubusercontent.com/43855029/168162717-824069ce-2834-407b-8f64-94e3dd4abc4f.png)
 
-## Step 5: Zip the 1500 files into 300 zip files as input request for Vista Nears
+## Step 5: Zip the 1500 files into 300 zip files as input request for Vista Nears using the same python notebook from Step 4
 
 ```python
+os.chdir(dir+output_folder)
 for i in FinalList:
-    with ZipFile(i+'_DFW.zip','w') as zipObj:
-         zipObj.write(i+'.shp')
-         zipObj.write(i+'.shx')
-         zipObj.write(i+'.dbf')
-         zipObj.write(i+'.sbn')
-         zipObj.write(i+'.sbx')
-         zipObj.write(i+'.prj')
+    with ZipFile(i+'_Miami.zip','w') as zipObj:
+        zipObj.write(i+'.shp')
+        zipObj.write(i+'.shx')
+        zipObj.write(i+'.dbf')
+        zipObj.write(i+'.sbn')
+        zipObj.write(i+'.sbx')
+        zipObj.write(i+'.prj')
 ```
 
 It is ready to use these zipped shapefile
