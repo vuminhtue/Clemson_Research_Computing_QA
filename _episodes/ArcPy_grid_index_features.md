@@ -16,6 +16,7 @@ keypoints:
 ![image](https://user-images.githubusercontent.com/43855029/168157704-4b92eeca-fe08-412c-8c4f-64a5d1d95317.png)
 
 ## Step 1: Create the boundary
+- Go to geojson.io
 - Assuming that we have the boundary in term of lon/lat, we will need to create the shapefile for that.
 - You can create the shapefile in ArcGIS or go to geojson.io and draw the polygon and modify the value:
 
