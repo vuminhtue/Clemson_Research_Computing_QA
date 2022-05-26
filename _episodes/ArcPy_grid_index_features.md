@@ -64,14 +64,18 @@ import numpy as np
 from zipfile import ZipFile
 
 # Set environment settings to folders:
-dir="C:/SMU/PROJECTS/Makris_cellphone/GIS/DFW_Nicos/Final_Code/GIS"
+dir="c:/SMU/PROJECTS/Makris_cellphone/GIS/Miami/49mi2/" # <== This needs to be changed and make sure "/" is used instead of "\"
+os.chdir(dir)
+
+os.mkdir("../output0404")
 arcpy.env.workspace = dir
+output_folder = "../output0404/"
 
 # Create the list of name of unique shapefile:
 List1 = os.listdir(dir)
 List2 = list()
 for i in List1:
-    pathname,extension = ps.path.splittext(dir+i)
+    pathname,extension = os.path.splitext(dir+i)
     filename = pathname.split('/')
     List2.append(filename[-1])
 
@@ -79,7 +83,7 @@ FinalList = np.unique(List2)
 
 # Create the output folder output0404 and use ArcPy to generate the files
 
-for i in FinalList
+for i in FinalList:
     print(i)
     #Set local variables
     outFeatureClass = output_folder+i
