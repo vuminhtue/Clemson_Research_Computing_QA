@@ -110,3 +110,16 @@ while j<=len(listfile)-1:
 ```
 
 - Note that due to the near server, sometime not being able to import GIS file, so we need to resubmit if it failed. It is represented as the for while loop.
+
+## Download the submitted jobs:
+
+Using OnDemand web portal (Remote Desktop) and open Firefox, 
+Go to near.com website and signin using Nicos's username & password then to retrieve the submitted jobs:
+
+```
+https://vista.um.co/users/sign_in
+```
+
+Check if your job has spawned the report or not to download to M2 directory:
+
+![image](https://user-images.githubusercontent.com/43855029/196506189-515b42bd-127d-4f0a-a0d3-c32b886cd66d.png)
