@@ -46,12 +46,15 @@ The endpoint is downloaded from NEAR DATA API given from their company in PDF, i
 https://uberretailapi.uberads.com/v1/uberretailapi/createJobWithFile
 ```
 
+- In Authorization tab, change **Type** to Bearer Token and insert Token value given by NEAR to Token box
+
+
 ![image](https://user-images.githubusercontent.com/43855029/168139485-2c7984e4-5099-4086-aee1-1ed12a970c63.png)
 
 - The most important task is the Body section, in the form data, there are 2 files that you need to insert:
 
-    + polygonFile with file type is File.
-    + jsonRequest with the string to download. Detail of json file is below:
+    + **polygonFile** with file type is **File**. The browse button will appear for you to upload the ziped shapefile
+    + **jsonRequest** with file type **Text**. Detail of json file is below:
 
 ```json
 {"pipReportType":"PIN_REPORT",
@@ -67,7 +70,7 @@ https://uberretailapi.uberads.com/v1/uberretailapi/createJobWithFile
 
 
 Note that: the reportName can be changed to match with the input shapefile.
-The polygonNameAliasElement="PageName" is fixed with the shapefile variable names
+The **polygonNameAliasElement="PageName"** is fixed with the shapefile variable names
 The start and end DateTime can be altered
 
 - Once everything is specified, hit Send then the job is submitted
