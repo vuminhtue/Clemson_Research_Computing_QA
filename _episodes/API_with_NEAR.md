@@ -40,6 +40,11 @@ keypoints:
 
 - The approach that I am using is POST instead of GET.
 - I also need to paste in the endpoint for the POST location and Authorization key in the Headers tab:
+The endpoint is downloaded from NEAR DATA API given from their company in PDF:
+
+```bash
+https://uberretailapi.uberads.com/v1/uberretailapi/createJob
+```
 
 ![image](https://user-images.githubusercontent.com/43855029/168139485-2c7984e4-5099-4086-aee1-1ed12a970c63.png)
 
