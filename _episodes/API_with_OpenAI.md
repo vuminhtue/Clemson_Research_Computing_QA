@@ -15,13 +15,78 @@ keypoints:
 - You can download Q&A data to csv, tsv format and later convert it to jsonl format
 - This is a PhD project where we will be fine-tuning GPT3 using OpenAI API from Linux terminal, with given API token.
 
-## OpenAI API
+## Request OpenAI API Key
 - First go to https://openai.com/api/
 - Sign up for an account
 - With newly created account, you will be having $18 credit to use for 3 months.
 - The pricing to use GPT3 for fine-tuning and application can be found [here](https://openai.com/api/pricing/)
-- On top right, click on your user account and Request the API key and save it somewhere:
+- On top right, click on your user account and Request the API key and save it somewhere. Note, you can request as many keys as wanted but using the latest key only
 
 ![image](https://user-images.githubusercontent.com/43855029/206238091-bd697a28-0bdb-42fe-87ec-afc9a0d1cffe.png)
 
 ![image](https://user-images.githubusercontent.com/43855029/206237923-04fdf74a-dcac-40b1-ab73-524971053fdc.png)
+
+## Download the data as CSV format
+- Prepare the data, for example from [here](https://www.apuritansmind.com/westminster-standards/shorter-catechism/) as csv format with 2 columns, one for question and one for answer. 
+- Format of the csv can be as following with **prompt** and **completion** for Q&A.
+- Sommetime, **prompt** can be the header of the paragraph and **completion** can be the content of the paragraph used to support the **prompt**.
+
+![image](https://user-images.githubusercontent.com/43855029/206238792-9592784e-b77e-4e1b-ab8f-ba781e1c7da5.png)
+
+## Using OpenAI API to train GPT3 model.
+- Here we will be using Linux terminal to work with OpenAI API.
+- You can use either Linux terminal from your M2 account via ssh, Open OnDemand platform or either locally via [Anacona Navigator](https://www.anaconda.com/products/distribution)
+- I will be showing you both ways:
+
+### Using Anaconda Navigator:
+
+- Once you download and install Anaconda Navigator to your Windows, Macs, Linux, open it and select CMD.exe Prompt:
+
+![image](https://user-images.githubusercontent.com/43855029/206240284-5ff50174-246e-49ac-a78d-ba6731ff26c3.png)
+
+- The command line interface (CLI) appears:
+
+![image](https://user-images.githubusercontent.com/43855029/206240453-2dc45e56-765e-49e8-98c1-5391eaaf9d67.png)
+
+- Now install openai using command:
+
+```python
+pip install openai
+```
+
+- Next, go to where you save the csv data, prepared from the previous step. For example, you save the file "Westminster_Catechism.csv" to "c:\SMU\PROJECTS\DrewDickens\", then in the command prompt, type:
+
+```bash
+cd c:/SMU/PROJECTS/DrewDickens/
+```
+
+- Use OpenAI API to convert csv file to jsonl format, select "Y" for all question
+
+```bash
+$ openai tools fine_tunes.prepare_data -f Westminster_Catechism.csv
+```
+
+- You will see the new file with jsonl extension created: "Westminster_Catechism_prepared.jsonl"
+
+- Set your API key with *abc* is the API key retrieved above
+
+```bash
+set OPENAI_API_KEY=abc
+```
+
+- Fine-tuning GPT3 using **ada** model:
+
+```bash
+openai api fine_tunes.create -t Westminster_Catechism_prepared.jsonl -m ada
+```
+
+if your model is completed, it should show this:
+
+![image](https://user-images.githubusercontent.com/43855029/206245060-5aa1f40c-228f-4c4a-92a8-ad03e1a4c259.png)
+
+- Use the trained model with any question:
+
+```bash
+openai api completions.create -m ada:ft-personal-2022-12-07-17-10-04 -p "What are the punishments of sin in the world to come?"
+```
+
