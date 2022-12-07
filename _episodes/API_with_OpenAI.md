@@ -20,6 +20,8 @@ keypoints:
 - Sign up for an account
 - With newly created account, you will be having $18 credit to use for 3 months.
 - The pricing to use GPT3 for fine-tuning and application can be found [here](https://openai.com/api/pricing/)
-- Request the API key and save it somewhere:
+- On top right, click on your user account and Request the API key and save it somewhere:
 
-![image](https://user-images.githubusercontent.com/43855029/206237692-0190c04d-c487-4f9a-a8a0-d75c3756e6b6.png)
+![image](https://user-images.githubusercontent.com/43855029/206238091-bd697a28-0bdb-42fe-87ec-afc9a0d1cffe.png)
+
+![image](https://user-images.githubusercontent.com/43855029/206237923-04fdf74a-dcac-40b1-ab73-524971053fdc.png)
