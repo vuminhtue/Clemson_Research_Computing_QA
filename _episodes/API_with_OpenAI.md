@@ -90,3 +90,65 @@ if your model is completed, it should show this:
 openai api completions.create -m ada:ft-personal-2022-12-07-17-10-04 -p "What are the punishments of sin in the world to come?"
 ```
 
+![image](https://user-images.githubusercontent.com/43855029/206245604-fbce3c55-86a9-4d37-86ea-70e19da45bf2.png)
+
+### Using M2
+
+It is very much the same as using ManeFrame 2 or any other HPC to fine-tune GPT3 with openai api.
+
+- After login to M2, Request a compute node:
+
+```bash
+$ srun -N1 -p standard-mem-s -c2 --mem=5G --pty $SHELL
+```
+
+- Load python
+
+```bash
+module load python/3
+```
+
+- Create conda environment with python 3.8 
+
+```bash
+$ conda create -n openai python==3.8
+```
+
+- then activate the conda environment to install openai 
+
+```bash
+$ source activate openai
+$ pip install openai
+```
+
+- set the API Key
+
+```bash
+export OPENAI_API_KEY=abc
+```
+
+- Next, go to where you save the csv data, prepared from the previous step. For example, you save the file "Westminster_Catechism.csv" to "/work/users/tuev", then in the command prompt, type:
+
+```bash
+cd /work/users/tuev
+```
+
+- Use OpenAI API to convert csv file to jsonl format, select "Y" for all question
+
+```bash
+$ openai tools fine_tunes.prepare_data -f Westminster_Catechism.csv
+```
+
+- You will see the new file with jsonl extension created: "Westminster_Catechism_prepared.jsonl"
+
+- Fine-tuning GPT3 using **ada** model:
+
+```bash
+openai api fine_tunes.create -t Westminster_Catechism_prepared.jsonl -m ada
+```
+
+- Use the trained model with any question:
+
+```bash
+openai api completions.create -m ada:ft-personal-2022-12-07-17-10-04 -p "What are the punishments of sin in the world to come?"
+```
